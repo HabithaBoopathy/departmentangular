@@ -1,0 +1,54 @@
+<!-- <h2>App Component</h2>
+<button class="btn btn-primary" (click)="btnClicked()">Hey</button> -->
+<div style="margin-top: 30px"></div>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-6 col-md-6">
+      <!-- register card -->
+      <div class="col-xs-12 col-md-12">
+        <div class="card">
+          <div class="card-header">
+            <div><h3>Department</h3></div>
+          </div>
+          <div class="card-body">
+            <div class="form-group">
+              <label><h6>DepartmentId</h6></label>
+              <input
+                type="text"
+                name="DepartmentId"
+                class="form-control"
+                style="display: inline"
+                [(ngModel)]="department.departmentId"
+              />
+            </div>
+
+            <div class="form-group">
+              <label><h6>DepartmentName</h6></label>
+              <input
+                type="text"
+                name="DepartmentName"
+                class="form-control"
+                [(ngModel)]="department.departmentName"
+              />
+
+              
+            </div>
+
+      
+            <div class="form-group">
+              <button class="btn btn-block btn-primary" (click)="onRegister()">
+                Register
+              </button>
+
+              <button class="btn btn-block btn-success" (click)="onUpdate()">
+                Update
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+   
